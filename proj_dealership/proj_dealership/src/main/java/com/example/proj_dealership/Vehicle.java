@@ -9,39 +9,32 @@ import javax.persistence.Id;
 public class Vehicle {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;	
-	private String name;
-	private String type;
-	private String brand;
+	private int id;	
+	private String make;
+	private String model;
 	private int year;
-	private int mileage;
+	private double price;
+	private int stock;
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getMake() {
+		return make;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMake(String make) {
+		this.make = make;
 	}
 
-	public String getType() {
-		return type;
+	public String getModel() {
+		return model;
 	}
-	public void setType(String type) {
-		this.type = type;
-	}
-	
-	public String getBrand() {
-		return brand;
-	}
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setModel(String model) {
+		this.model = model;
 	}
 	
 	public int getYear() {
@@ -51,11 +44,18 @@ public class Vehicle {
 		this.year = year;
 	}
 	
-	public int getMileage() {
-		return mileage;
+	public double getPrice() {
+		return price;
 	}
-	public void setMileage(int mileage) {
-		this.mileage = mileage;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 	
+	
+	public int getStock() {
+		return stock;
+	}
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
 }
