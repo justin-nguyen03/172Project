@@ -43,11 +43,11 @@ public class VehicleController {
       return vehicleRepository.findAll();
   }
   
-  @GetMapping(path = "/vehicles-html")
-  public String viewVehiclesPage(Model model) {
+  @GetMapping(path = "/vehicles_display")
+  public String viewVehiclesDisplayPage(Model md) {
 	  List<Vehicle> listVehicles = (List<Vehicle>) vehicleRepository.findAll();
-	  model.addAttribute("listVehicles", listVehicles);
-      return "vehicles-html";
+	  md.addAttribute("listVehicles", listVehicles);
+      return "vehicles_display";
   }
   /*
   @GetMapping(path = "/all")
