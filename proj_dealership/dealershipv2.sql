@@ -54,7 +54,7 @@ CREATE TABLE `vehicle` (
   `model` varchar(50) DEFAULT NULL,
   `year` int DEFAULT NULL,
   `price` double DEFAULT NULL,
-  `stock_amount` int DEFAULT NULL,
+  `stock` int DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
