@@ -49,6 +49,64 @@ public class VehicleController {
 	  md.addAttribute("listVehicles", listVehicles);
       return "vehicles_display";
   }
+  
+  @GetMapping(path = "/main")
+  public String viewMain(Model model) {
+	  
+      return "main";
+  }
+  
+  @GetMapping(path = "/customers")
+  public String viewCustomers(Model model) {
+	  
+      return "customers";
+  }
+  
+  @GetMapping(path = "/dashboard")
+  public String viewDashboard(Model model) {
+	  
+      return "dashboard";
+  }
+
+  @GetMapping(path = "/inventory")
+  public String viewInventory(Model model) {
+	  
+	  
+	  
+      return "inventory";
+  }
+  
+  @GetMapping(path = "/currentDeals")
+  public String viewCurrentDeals(Model model) {
+	  
+      return "currentDeals";
+  }
+  
+  @GetMapping(path = "/accounting")
+  public String viewAccounting(Model model) {
+	  
+      return "accounting";
+  }
+  
+  @GetMapping(path = "/pending")
+  public String viewPending(Model model) {
+	  
+      return "pending";
+  }
+  
+  @GetMapping(path = "/myAccount")
+  public String viewMyAccount(Model model) {
+	  
+      return "myAccount";
+  }
+  
+  @GetMapping(path = "/adming")
+  public String viewAdming(Model model) {
+	  
+      return "admin";
+  }
+  
+  
   /*
   @GetMapping(path = "/all")
   public @ResponseBody Iterable < User > getAllUsers() {
