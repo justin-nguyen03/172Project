@@ -5,5 +5,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
 public interface VehicleRepository extends CrudRepository<Vehicle, Long>{
-	Vehicle findByName(String name);
+	Vehicle findByMake(String make);
 }
