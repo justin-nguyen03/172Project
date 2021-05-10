@@ -62,12 +62,6 @@ public class VehicleController {
       return "customers";
   }
   
-  @GetMapping(path = "/dashboard")
-  public String viewDashboard(Model model) {
-	  
-      return "dashboard";
-  }
-
   @GetMapping(path = "/inventory")
   public String viewInventory(Model model) {
 	  
@@ -100,7 +94,7 @@ public class VehicleController {
       return "myAccount";
   }
   
-  @GetMapping(path = "/adming")
+  @GetMapping(path = "/admin")
   public String viewAdming(Model model) {
 	  
       return "admin";
