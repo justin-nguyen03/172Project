@@ -24,6 +24,50 @@ public class AppController {
 		return "index";
 	}
 	
+	@RequestMapping("/inventory")
+	public String viewInventory(Model model) {
+		List<Vehicle> listVehicles = service.listAll();
+		model.addAttribute("listVehicle", listVehicles);
+		
+		return "inventory";
+	}
+	
+	@RequestMapping("/customers")
+	public String viewCustomers(Model model) {
+		
+		return "customers";
+	}
+	
+	@RequestMapping("/accounting")
+	public String viewAccounting(Model model) {
+		
+		return "accounting";
+	}
+	
+	@RequestMapping("/admin")
+	public String viewAdmin(Model model) {
+		
+		return "admin";
+	}
+	
+	@RequestMapping("/currentDeals")
+	public String viewDeals(Model model) {
+		
+		return "deals";
+	}
+	
+	@RequestMapping("/myAccount")
+	public String viewMyAccount(Model model) {
+		
+		return "myAccount";
+	}
+	
+	@RequestMapping("/pending")
+	public String viewPending(Model model) {
+		
+		return "pending";
+	}
+	
 	@RequestMapping("/new")
 	public String showNewProductForm(Model model) {
 		Vehicle vehicle = new Vehicle();
