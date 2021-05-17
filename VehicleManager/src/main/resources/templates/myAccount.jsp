@@ -180,14 +180,14 @@ div.content {
 			<body class="body">
 			<br>
 			<div class="sidebar">
-  <a class="active" href="/">Dashboard</a>
+  <a  href="/">Dashboard</a>
   <a href="/inventory">Inventory</a>
   <a href="/customers">Customers</a>
   <a href="/currentDeals">Current Deals</a>
-  <a href="/accounting">Accounting</a>
+  <a  href="/accounting">Accounting</a>
   <a href="/pending">Pending</a>
-  <a href="/myAccount">My Account</a>
-  <a href="/admin">Admin</a>
+  <a class="active" href="/myAccount">My Account</a>
+  <a  href="/admin">Admin</a>
 </div>
 
 <!-- Page content -->
@@ -201,7 +201,7 @@ div.content {
    <br>
    <br>
    <br>
-	<h3 th:inline="text">Welcome [[${#httpServletRequest.remoteUser}]]</h3>
+	<h3 th:inline="text">My Account [[${#httpServletRequest.remoteUser}]]</h3>
 		
 </div>
   
